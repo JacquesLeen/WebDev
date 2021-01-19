@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy of a CSS Rule</title>
+    <style>
+        p {
+            color: blue;
+            font-size: 20px;
+            width: 1000px;
+        }
+        
+        h1 {
+            color: green;
+            font-size: 36px;
+            text-align: center;
+        }
+        
+        .mystile {
+            color: indigo;
+            font-stretch: semi-condensed;
+            text-decoration: khaki;
+        }
+        
+        #verysmall {
+            color: black;
+            font-size: 8px;
+            text-align: justify;
+        }
+        /* Selectors can also be combined, one way of doing that is element + class*/
+        
+        p.big {
+            color: red;
+            text-align: right;
+        }
+        /*targets every p element that has the class big*/
+        
+        article>div {
+            color: seagreen;
+            text-transform: capitalize;
+        }
+        /*targets the div elements that are direct child of the article elements*/
+        
+        article p {
+            color: navy;
+            size: 25px;
+            text-indent: 2px;
+            background-color: orange;
+            font: bolder;
+        }
+        /*This targets p that are under article at any level*/
+    </style>
+</head>
+
+<body>
+    <h1>Anatomy of a CSS Rule</h1>
+    <h2>Subheading1</h2>
+    <p>
+        CSS works by associating rules with HTML elements. These rules govern how the content is displayed in the web page. A CSS rule contains two elements, a selector followed by a declaration
+    </p>
+    <p>
+        an example is the following. color : blue;
+    </p>
+    <div class="mystile">
+        Class declaration for styles are particularly useful cause they are not attached to a specific structure element. I can have a div with those particular specifications...
+    </div>
+    <h2 class="mystile">BUT A HEADING AS WELL. Calling the same class!!</h2>
+    <div id="verysmall">This is a bunch of very small text written with the id verysmall created within the html page specifying some CSS rules</div>
+    <p class="big">should be red and on the right side of the page</p>
+    <article>
+        <p>
+            The text under this should be capitalized as well as Green (or seagreen rather) -> Unless i have specified a rule that superscribes that
+        </p>
+    </article>
+    <article>
+        <div>
+            fsjdklahlf,.ksdfkln,.yxmvjdklgj,.amv,.jadg,manjadng,nadg,ndg.,kxnvm,nx,vlkadg, x,mvsdgjknax,v,hxkgnadvhxknax,nksdfgknym,xnahdjkgn
+            <p>This text shoule appear with some cool freatures</p>
+        </div>
+    </article>
+</body>
+
+</html>
