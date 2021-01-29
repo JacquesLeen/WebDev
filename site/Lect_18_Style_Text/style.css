@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+* {
+    box-sizing: border-box;
+}
+
+
+/* the * element allows to specify selectors that are valid for all elements*/
+
+body {
+    padding: 0;
+}
+
+.style {
+    color: #0000ff;
+    background-color: orange;
+    /*font-style: italic;*/
+    font-family: Trirong, serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 500px;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+.padding_forced {
+    background-color: grey;
+    padding: 5px;
+    /*if I specify only one number it is applied from all the sides*/
+}
+
+div a {
+    font-size: 130%;
+    background-color: rgb(79, 216, 79);
+    text-align: center;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}

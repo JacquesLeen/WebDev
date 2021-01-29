@@ -1,0 +1,44 @@
+/********* Base Styles ********/
+
+h1 {
+    color: darkred;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+p {
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+#p1 {
+    background-color: blueviolet;
+    height: 300px;
+    width: 300px;
+}
+
+#p2 {
+    background-color: cadetblue;
+    height: 60px;
+    width: 60px;
+}
+
+
+/********* Large Devices Only ********/
+
+@media (min-width: 1200px) {
+    #p1 {
+        background-color: blueviolet;
+        width: 80%;
+    }
+}
+
+
+/********* Medium Devices Only ********/
+
+@media (max-width: 1199px) {
+    #p1 {
+        background-color: yellow;
+        width: 30%;
+    }
+}

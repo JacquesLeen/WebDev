@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+p {
+    width: 50%;
+    height: auto;
+    /*border: 1px solid black;*/
+    float: left;
+    box-sizing: border-box;
+    padding: 3px;
+    font-family: Trirong, serif;
+    /*the float attribute moves the element outside of the regular flow of the html file*/
+}
+
+#p1 {
+    /*background-color: blueviolet;*/
+}
+
+#p2 {
+    /*background-color: chocolate;*/
+}
+
+#p3 {
+    background-color: cyan;
+}
+
+#p4 {
+    background-color: darkseagreen;
+}

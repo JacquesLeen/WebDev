@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*Style sheet declarations for pseudo class selectors*/
+        /*==================================PSEUDO CLASS SELECTOR=================================*/
+        /*This are rules that get implemented and produce a certain style given some conditions, e.g. a button changes its color if the 
+        user hoovers with the mouse on that
+        SYNTAX
+        selector:pseudo-class
+        */
+        
+        header li {
+            list-style: none;
+            /*removes the item object */
+        }
+        
+        a:link,
+        a:visited {
+            /*here the style does not gets applied in two different manners if the link has already been visited or not*/
+            text-decoration: none;
+            background-color: orangered;
+            border: 1px solid blue;
+            color: black;
+            display: block;
+            margin-bottom: 2px;
+            width: 200px;
+            text-align: center;
+        }
+        
+        a:hover,
+        a:active {
+            /*states for the link button as I hover on that with the mouse and as it is active*/
+            text-decoration: none;
+            background-color: limegreen;
+            border: 1px solid black;
+            color: black;
+            display: block;
+            margin-bottom: 2px;
+            width: 200px;
+            text-align: center;
+        }
+        
+        section div:nth-child(odd) {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Class Selectors</h1>
+    <header>
+        <ul>
+            <li>
+                <a href="https://www.binance.com/en/trade/LINK_EUR" , title="BINANCE LINK/EUR" , target="_blank">External Link to Binance</a></li>
+            <li>
+                <a href="https://www.google.com" , title="Google" , target="_blank">External Link to Google</a></li>
+        </ul>
+    </header>
+    <section>
+        <div>
+            Element 1 of List
+        </div>
+        <div>
+            Element 2 of List
+        </div>
+        <div>
+            Element 3 of List
+        </div>
+        <div>
+            Element 4 of List
+        </div>
+    </section>
+</body>
+
+</html>
